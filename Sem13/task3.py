@@ -1,8 +1,8 @@
 def consecutive_operation(st: str) -> list:
-    if len(st) != 10:
-        return "Invalid input"
     lst = st.split(", ")
     result = []
+    if len(lst) != 4:
+        return "Invalid input"
     for i in range (len(lst)):
         lst[i] = int(lst[i])
     for i in range(1, len(lst)):
